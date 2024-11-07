@@ -10,7 +10,6 @@ jobs:
   add-to-project2:
     name: Add issue to Project2
     runs-on: ubuntu-latest
-    if: github.event.issue.labels.*.name contains 'PMS' # PMSラベルが付いている場合のみ実行
     steps:
       - uses: actions/add-to-project@RELEASE_VERSION
         with:
