@@ -7,11 +7,11 @@ on:
       - labeled
 
 jobs:
-  add-to-project2:
+  add-to-project:
     name: Add issue to Project2
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@RELEASE_VERSION
+      - uses: actions/add-to-project@1.0.2
         with:
           project-url: https://github.com/users/39TO/projects/1
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
